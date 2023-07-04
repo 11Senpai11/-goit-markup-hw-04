@@ -100,6 +100,9 @@ font-family: 'Raleway',sans-serif;
 .list-link:hover, .list-link:focus {
         color: #404bbf;
 }
+.active {
+    color:#404bbf;
+}
 .list-link.active::after {
     content: "";
     position: absolute;
@@ -608,6 +611,7 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0
 
 }
 .modal-btn {
+    color: #2E2F42;
     display: flex;
     border-radius: 50%;
     justify-content: center;
@@ -625,13 +629,13 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-btn:hover{
+.modal-btn:hover, .modal-btn:focus{
 background-color: #404bbf;
 border: none;
-fill: #FFFFFF;
+color: #ffffff;
 }
 .modal-icon{
-    fill: #2E2F42;
+    fill: currentColor;
     flex-shrink: 0;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
